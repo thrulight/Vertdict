@@ -7,31 +7,51 @@
 
   <title>Emilie Durand</title>
 
+  <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/home.css">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script type="text/javascript" src="script.js"></script>
+
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
   <!-- Navigation bar -->
-      <div class="nav-bar" id="navbar">
-        <img src="images/logo-vert.svg" onclick="window.location.href='index.html'" alt="">
-        
-        <ul class="nav-text">
-            <li><a class="active" href="index.html">Nos solutions</a></li>
-            <li><a class="active" href="index.html">Qu’est-ce que le legal design ?</a></li>
-            <li><a class="active" href="index.html">Notre équipe</a></li>
-        </ul>
+  <div class="X" id="X"><span  onclick="closeNav()">&times;</span></div>
+  <div id="overlay" class="overlay"></div>
 
-        <button class="buttonNav">Nous contacter</button>
+  <div class="nav-bar" id="navbar">
+    <img src="images/logo-vert.svg" onclick="window.location.href='index.html'" alt="">
+      
+    <ul class="nav-text">
+      <li><a href="index.html">Nos solutions</a></li>
+      <li><a  href="index.html">Qu’est-ce que le legal design ?</a></li>
+      <li><a href="index.html">Notre équipe</a></li>
+    </ul>
 
-      </div>
+    <button class="buttonNav">Nous contacter</button>
+
+    <a class="icon" id="icon" onclick="openNav()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <ul class="nav-bar-mobile" id="nav-bar-mobile">
+    <li><a href="index.html">Nos solutions</a></li>
+    <li><a  href="index.html">Qu’est-ce que le legal design ?</a></li>
+    <li><a href="index.html">Notre équipe</a></li>
+  </ul>
 
 
   <div class="section1">
     <div class="left">
       <h1>
-        Le design pour traduire, le droit pour éclairer
+        Le design pour traduire,<br>le droit pour éclairer
       </h1>
 
       <p>
@@ -40,23 +60,97 @@
     </div>
 
     <div class="right">
-      <img src="" alt="">
+      <img src="images/compoHome.png" alt="">
     </div>
    
   </div>
 
   <div class="section2">
-    <h2>Vous défendez l’environnement, 
-on vous aide à en parler !</h2>
+    <h2>Vous défendez l’environnement,<br>
+      on vous aide à en parler !</h2>
+
+    <div class="blockContainer">
+      <div class="block">
+        <div class="iconContainer"><img src="images/icon_com.png" alt=""></div>
+        <h4>Gagnez en visibilité</h4>
+        <p>Faire connaître votre action en justice et les valeurs qu’elle porte auprès du grand public et de la presse</p>
+      </div>
+
+      <div class="block">
+        <div class="iconContainer"><img src="images/icon_poids.png" alt=""></div>
+        <h4>Donnez du poids à vos arguments</h4>
+        <p>Rendre vos arguments plus impactants pour le juge </p>
+      </div>
+
+      <div class="block">
+        <div class="iconContainer"><img src="images/icon_public.png" alt=""></div>
+        <h4>Sensibilisez un large public à votre cause</h4>
+        <p>Mobiliser la société civile avec des formats accessibles</p>
+      </div>
+
+      <div class="block">
+        <div class="iconContainer"><img src="images/icon_collaboration.png" alt=""></div>
+        <h4>Communiquez avec vos partenaires</h4>
+        <p>Vulgariser un contentieux pour vous aider à communiquer avec vos partenaires et obtenir des financements</p>
+      </div>
+    </div>
+
   </div>
 
   <div class="section3">
-    <h4>Découvrez nos solutions</h4>
+    <h3>Découvrez nos solutions</h3>
+    <button class="buttonDefault">Nous contacter</button>
   </div>
 
   <div class="section4">
-    <h2>Vous défendez l’environnement, 
-on vous aide à en parler !</h2>
+    <div class="titleContainer">
+      <h2>Le projet du moment</h2>
+      <img src="images/etoile.svg" alt="">
+    </div>
+
+    <div class="projectContainer">
+      <div class="imgContainer">
+        <img src="images/logo_NAAT.png" alt="">
+      </div>
+
+      <div class="txtContainer">
+        <h4>Association partenaire</h4>
+        <p>
+          Notre Affaire à Tous est une association créée en 2015 qui a pour objet d’utiliser le droit comme un levier stratégique de lutte contre la triple crise environnementale – climat, biodiversité, pollution. En collaboration avec plusieurs associations, elle a mené des procédures judiciaires emblématiques, telles que L'Affaire du Siècle et des procès contre TotalEnergies et BNP Paribas.
+        </p>
+
+        <h4>Enjeux de la mission</h4>
+        <p>
+          Le groupe de travail de Notre Affaire à tous consacré au procès Justice Pour Le Vivant souhaitait communiquer au grand public des informations sur ce procès via son site internet et ses réseaux sociaux. 
+          <br>
+          Son objectif : informer son public sur l’état d’avancement du procès, les objectifs de la procédure d'appel et les failles du protocole de mise sur le marché des pesticides.
+          <br>
+          Le défi principal de cette mission était de rendre accessible le protocole scientifique de l’ANSES dans le cadre du procès en cours.
+        </p>
+
+        <h4>Méthode et solution choisie</h4>
+        <p>
+          Nous avons mené une étude terrain (personas et interviews) pour comprendre comment aider des adultes sensibles à l’écologie à saisir les enjeux du procès Justice pour le Vivant. Après avoir défini la problématique, nous avons exploré plusieurs pistes avant de choisir un format d’infographies carrousel. Deux prototypes ont été créés, testés puis ajustés, aboutissant à deux carrousels : l’un sur le procès et son appel, l’autre sur la réforme du protocole de mise sur le marché des pesticides par l’ANSES.
+        </p>
+      </div>
+
+    </div>
+    
+  </div>
+
+  <div class="section5">
+    <h3>Envie d’en apprendre plus sur le legal design ?</h3>
+    <button class="buttonDefault">Nous contacter</button>
+  </div>
+
+  <div class="footer">
+    <img src="images/logo-vert.svg" onclick="window.location.href='index.html'" alt="">
+
+    <div class="linkContainer">
+      <a href="">Nos statuts</a>
+      <a href="">Mentions légales</a>
+      <a href="">vertdict@proton.me</a>
+    </div>
   </div>
 </body>
 
