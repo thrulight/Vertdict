@@ -161,32 +161,15 @@ p {
     height: 100%;
 }
 
-.menu {
-  display: none;
-}
-
 .overlay {
+  position: fixed;
   height: 100%;
   width: 0;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  background-color: #24252a;
+  background-color: var(--green);
+  
+  z-index: 2;
   overflow-x: hidden;
   transition: width 0.5s ease 0s;
-}
-
-.overlay--active {
-  width: 100%;
-}
-
-.overlay__content {
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .overlay a {
@@ -199,13 +182,6 @@ p {
 .overlay a:hover,
 .overlay a:focus {
   color: #0088a9;
-}
-.overlay .close {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-  color: #edf0f1;
 }
 
 .nav-bar .icon {
@@ -249,21 +225,14 @@ p {
     font-size: 1rem;
     font-weight: 500;
 }
+.footer a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 
 /* Mobile version */
 @media screen and (max-width: 900px){
-
-.overlay{
-  position: fixed;
-  width: 0;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: var(--green);
-  z-index: 1;
-}
 
 .X{
   display: none;
@@ -275,7 +244,6 @@ p {
   font-size: 40px;
   cursor: pointer;
 }
-
 
 .nav-bar-mobile {
   position: fixed;
@@ -295,25 +263,20 @@ p {
   text-decoration: none;
   color: white;
   font-size: 2rem;
-  text-align: left;
-  letter-spacing: normal;
   font-weight: 400;
   text-align: center;
 }
 
 /* the whole navigation bar */
 .nav-bar {
-  display: flex; /*important*/
-  align-items: center; /*important*/
-  width: 100%; /*important*/
-  position: absolute;
-
+  /*
+  display: flex; 
+  align-items: center; 
+  width: 100%; 
+  position: absolute; */
   padding: 2.5vh 7vw 2.5vh 7vw;
 }
 
-/*.nav-bar ul * {
-  display: none;
-}*/
 
 .nav-bar li {
   display: none;
@@ -339,6 +302,10 @@ p {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+}
+
+.footer, .footer .linkContainer {
+    flex-direction: column;
 }
 
 }
