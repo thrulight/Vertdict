@@ -5,7 +5,7 @@
     height: 100%;
     background-color: var(--dkGreen);
     color: white;
-    padding: 96px 128px ;
+    padding: 96px 128px;
     display: flex;
     align-items: center;
     gap: 64px;
@@ -42,7 +42,7 @@
     width: 100%;
 }
 
-.section2 h4 {color: var(--green);}
+.section2 h5 {color: var(--green);}
 
 .section2 .iconContainer {
     background-color: var(--blue);
@@ -69,11 +69,6 @@
 }
 
 .section3 h3 {color: white;}
-
-.section3 button {
-    background-color: white;
-    color: var(--dkGreen);
-}
 
 /* Section 4 */
 .section4 {
@@ -130,33 +125,60 @@
     align-items: center;
 }
 
-.section5 h3 {color: white;}
+.section5 h3 {color: white; text-align: center;}
 
-.section5 button {
-    background-color: white;
-    color: var(--dkGreen);
+/* Section 6 */
+.sectionRejoindre {
+    padding: 96px 128px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+    gap: 64px;
 }
+
+.sectionRejoindre .BigTxtContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.sectionRejoindre .txtContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.sectionRejoindre h2, .sectionRejoindre h4 {color: var(--green);}
+
+.sectionRejoindre .BigTxtContainer, .sectionRejoindre .imgContainer {width: 100%;}
+
+.sectionRejoindre img {width: 100%;}
+
 
 /* Mobile version */
 @media screen and (max-width: 900px){
 
-.section1 {
-    flex-direction: column;
-}
-
 .section2 .blockContainer {
-    display: flex;
     flex-direction: column;
-    width: 100%;
-    gap: 16px;
+    gap: 48px;
 }
 
 .section4 .projectContainer {
     flex-direction: column;
 }
 
-.section1, .section2, .section3, .section4, .section5 {
-    padding: 48px 64px;
+.section1, .section2, .section3, .section4, .section5, .sectionRejoindre {
+    padding: 48px 24px;
+}
+
+.section1 {
+    flex-direction: column;
+    padding-top: 128px;
+}
+
+.sectionRejoindre {
+    flex-direction: column;
 }
 
 }

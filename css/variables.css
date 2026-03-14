@@ -35,7 +35,7 @@ h1 {
 
     font-size: 6rem;
     font-weight: 400;
-    line-height: 100%;
+    line-height: .9;
     margin: 1vh 0 1vh 0;
   
 }
@@ -47,7 +47,7 @@ h2 {
 
     font-size: 4.75rem;
     font-weight: 400;
-    line-height: 100%;
+    line-height: .9;
     margin: 1vh 0 1vh 0;
 }
 
@@ -100,7 +100,7 @@ p {
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 1;
+    z-index: 2;
 
     transition: top 0.3s;
 }
@@ -126,18 +126,8 @@ p {
     opacity: 1;
 }
 
-.nav-bar .buttonNav {
-    font-family: Outfit, Arial, Helvetica, sans-serif;
-    border: none;
-    color: white;
-    background-color: var(--blue);
-    padding: 8px 16px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+.nav-bar .buttonDefault {
     font-size: 0.875rem;
-    cursor: pointer;
-    height: fit-content;
 }
 
 .active {
@@ -147,13 +137,37 @@ p {
 /* Buttons */
 .buttonDefault {
     font-family: Outfit, Arial, Helvetica, sans-serif;
-    background-color: var(--green);
+    background-color: var(--blue);
     border: none;
     color: white;
     padding: 8px 16px;
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
+}
+.buttonLight {
+    font-family: Outfit, Arial, Helvetica, sans-serif;
+    background-color: white;
+    border: none;
+    color: var(--dkGreen);
+    padding: 8px 16px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.buttonOutline {
+    font-family: Outfit, Arial, Helvetica, sans-serif;
+    background-color: transparent;
+    border: 1px solid var(--blue);
+    color: var(--blue);
+    padding: 8px 16px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.buttonDefault:hover, .buttonOutline:hover {
+  opacity: .85;
+  transition: 0.3s ease 0s;
 }
 
 .left, .right {
@@ -167,7 +181,7 @@ p {
   width: 0;
   background-color: var(--green);
   
-  z-index: 2;
+  z-index: 3;
   overflow-x: hidden;
   transition: width 0.5s ease 0s;
 }
@@ -224,6 +238,8 @@ p {
 
     font-size: 1rem;
     font-weight: 500;
+
+    text-align: center;
 }
 .footer a:hover {
     text-decoration: underline;
@@ -233,6 +249,12 @@ p {
 
 /* Mobile version */
 @media screen and (max-width: 900px){
+
+h1 {font-size: 5rem;}
+
+h2 {font-size: 4rem;}
+
+h3 {font-size: 1.5rem;}
 
 .X{
   display: none;
@@ -252,28 +274,29 @@ p {
   height: 100%;
   list-style: none;
   padding: 0;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: left;
   flex-direction: column;
+  padding: 0 24px 32px 24px;
 }
 
-.nav-bar-mobile li a {
-  padding: 32px;
+.nav-bar-mobile li {padding: 1.25rem 0;}
 
-  text-decoration: none;
-  color: white;
-  font-size: 2rem;
+.nav-bar-mobile li a {
+  font-size: 5em;
   font-weight: 400;
   text-align: center;
+  text-decoration: none;
+  line-height: .9;
+
+  color: white;
+  font-family: Gazzetta, Arial, Helvetica, sans-serif;
+  font-style: italic;
+  text-transform: uppercase;
 }
 
 /* the whole navigation bar */
 .nav-bar {
-  /*
-  display: flex; 
-  align-items: center; 
-  width: 100%; 
-  position: absolute; */
   padding: 2.5vh 7vw 2.5vh 7vw;
 }
 
@@ -283,7 +306,7 @@ p {
   float: none;
 }
 
-.nav-bar .buttonNav {
+.nav-bar .buttonDefault {
     display: none;
 }
 
@@ -304,8 +327,14 @@ p {
   align-items: center;
 }
 
-.footer, .footer .linkContainer {
+.footer {
+  flex-direction: column;
+  padding: 48px 24px;
+  gap: 48px;
+}
+.footer .linkContainer {
     flex-direction: column;
+    gap: 16px;
 }
 
 }
