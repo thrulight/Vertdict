@@ -18,12 +18,14 @@ body {
 /* Fonts */
 @font-face {
   font-family: Gazzeta;
-  src: url(../fonts/gazzetta-italic.otf);
+  src: url(../fonts/Gazzetta-BlackSlanted.otf) format('opentype');
+  src: url(../fonts/Gazzetta-BlackSlanted.ttf) format('truetype');
+  src: url(../fonts/Gazzetta-BlackSlanted.woff) format('woff');
 }
 
 @font-face {
   font-family: Outfit;
-  src: url(../fonts/Outfit-VariableFont_wght.ttf);
+  src: url(../fonts/Outfit-VariableFont_wght.ttf) format('truetype');
 }
 
 
