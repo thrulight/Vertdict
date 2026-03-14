@@ -28,7 +28,7 @@ body {
 }
 
 @font-face {
-  font-family: Outfit;
+  font-family: 'Outfit';
   src: url(../fonts/Outfit-VariableFont_wght.ttf) format('truetype');
 }
 
@@ -47,7 +47,7 @@ h1 {
 }
 
 h2 {
-    font-family: Gazzetta, Arial, Helvetica, sans-serif;
+    font-family: 'Gazzetta', Arial, Helvetica, sans-serif;
     font-style: italic;
     text-transform: uppercase;
 
@@ -58,7 +58,7 @@ h2 {
 }
 
 h3 {
-    font-family: Outfit, Arial, Helvetica, sans-serif;
+    font-family: 'Outfit', Arial, Helvetica, sans-serif;
 
     font-size: 2rem;
     font-weight: 400;
@@ -67,7 +67,7 @@ h3 {
 }
 
 h4 {
-    font-family: Outfit, Arial, Helvetica, sans-serif;
+    font-family: 'Outfit', Arial, Helvetica, sans-serif;
     text-transform: uppercase;
 
     font-size: 1.25rem;
@@ -78,7 +78,7 @@ h4 {
 }
 
 h5 {
-    font-family: Outfit, Arial, Helvetica, sans-serif;
+    font-family: 'Outfit', Arial, Helvetica, sans-serif;
 
     font-size: 1.25rem;
     font-weight: 400;
@@ -88,7 +88,7 @@ h5 {
 }
 
 p {
-    font-family: Outfit, Arial, Helvetica, sans-serif;
+    font-family: 'Outfit', Arial, Helvetica, sans-serif;
 
     font-size: 1rem;
     line-height: 130%;
@@ -124,7 +124,7 @@ p {
 .nav-text a {
     color: white;
     text-decoration: none;
-    font-family: Outfit, Arial, Helvetica, sans-serif;
+    font-family: 'Outfit', Arial, Helvetica, sans-serif;
     opacity: .75;
 }
 
@@ -142,7 +142,7 @@ p {
 
 /* Buttons */
 .buttonDefault {
-    font-family: Outfit, Arial, Helvetica, sans-serif;
+    font-family: 'Outfit', Arial, Helvetica, sans-serif;
     background-color: var(--blue);
     border: none;
     color: white;
@@ -152,7 +152,7 @@ p {
     cursor: pointer;
 }
 .buttonLight {
-    font-family: Outfit, Arial, Helvetica, sans-serif;
+    font-family: 'Outfit', Arial, Helvetica, sans-serif;
     background-color: white;
     border: none;
     color: var(--dkGreen);
@@ -162,7 +162,7 @@ p {
     cursor: pointer;
 }
 .buttonOutline {
-    font-family: Outfit, Arial, Helvetica, sans-serif;
+    font-family: 'Outfit', Arial, Helvetica, sans-serif;
     background-color: transparent;
     border: 1px solid var(--blue);
     color: var(--blue);
@@ -240,7 +240,7 @@ p {
     color: var(--green);
     text-decoration: none;
 
-    font-family: Outfit, Arial, Helvetica, sans-serif;
+    font-family: 'Outfit', Arial, Helvetica, sans-serif;
 
     font-size: 1rem;
     font-weight: 500;
@@ -296,7 +296,7 @@ h3 {font-size: 1.5rem;}
   line-height: .9;
 
   color: white;
-  font-family: Gazzetta, Arial, Helvetica, sans-serif;
+  font-family: 'Gazzetta', Arial, Helvetica, sans-serif;
   font-style: italic;
   text-transform: uppercase;
 }
