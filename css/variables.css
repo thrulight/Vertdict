@@ -17,14 +17,14 @@ body {
 
 /* Fonts */
 @font-face {
-  font-family: Gazzeta;
+  font-family: 'Gazzeta';
   
   src: url(../fonts/Gazzetta-BlackSlanted.ttf) format('truetype');
   src: url(../fonts/Gazzetta-BlackSlanted.woff) format('woff');
   src: url(../fonts/Gazzetta-BlackSlanted.woff2) format('woff2');
   src: url(../fonts/Gazzetta-BlackSlanted.otf) format('opentype');
 
-  font-display: swap; /* optional but recommended */
+  font-display: swap;
 }
 
 @font-face {
@@ -35,7 +35,7 @@ body {
 
 /* Text styles */
 h1 {
-    font-family: Gazzetta, Arial, Helvetica, sans-serif;
+    font-family: 'Gazzetta', Arial, Helvetica, sans-serif;
     font-style: italic;
     text-transform: uppercase;
 
