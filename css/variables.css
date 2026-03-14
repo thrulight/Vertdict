@@ -18,11 +18,11 @@ body {
 /* Fonts */
 @font-face {
   font-family: 'Gazzeta';
-  
-  src: url(../fonts/Gazzetta-BlackSlanted.ttf) format('truetype');
-  src: url(../fonts/Gazzetta-BlackSlanted.woff) format('woff');
-  src: url(../fonts/Gazzetta-BlackSlanted.woff2) format('woff2');
-  src: url(../fonts/Gazzetta-BlackSlanted.otf) format('opentype');
+  src: 
+    url(../fonts/Gazzetta-BlackSlanted.woff2) format('woff2'), 
+    url(../fonts/Gazzetta-BlackSlanted.woff) format('woff'), 
+    url(../fonts/Gazzetta-BlackSlanted.ttf) format('truetype'), 
+    url(../fonts/Gazzetta-BlackSlanted.otf) format('opentype');
 
   font-display: swap;
 }
