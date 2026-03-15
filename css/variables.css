@@ -17,26 +17,32 @@ body {
 
 /* Fonts */
 @font-face {
-  font-family: 'Gazzeta';
-  src: 
-    url(../fonts/Gazzetta-BlackSlanted.ttf) format('truetype'),
-    url(../fonts/Gazzetta-BlackSlanted.woff2) format('woff2'), 
-    url(../fonts/Gazzetta-BlackSlanted.woff) format('woff'),
-    /*url(../fonts/Gazzetta-BlackSlanted.otf) format('opentype')*/;
-  font-display: swap;
-  font-style: italic;
+    font-family: 'Gazzetta';
+    src: 
+      url(../fonts/Gazzetta-BlackSlanted.ttf) format('truetype'),
+      url(../fonts/Gazzetta-BlackSlanted.woff2) format('woff2'), 
+      url(../fonts/Gazzetta-BlackSlanted.woff) format('woff'),
+      url(../fonts/Gazzetta-BlackSlanted.otf) format('opentype');
+    /*size-adjust: 150%;*/
+    font-display: swap;
 }
-
+/*
+@font-face {
+    font-family: 'Barlow';
+    src: 
+      url(../fonts/BarlowSemiCondensed-SemiBold.ttf) format('truetype');
+}
+*/
 @font-face {
   font-family: 'Outfit';
   src: url(../fonts/Outfit-VariableFont_wght.ttf) format('truetype');
 }
 
-
 /* Text styles */
 h1 {
     font-family: 'Gazzetta', Arial, Helvetica, sans-serif;
-    font-style: italic;
+    /*font-style: italic;*/
+    /*letter-spacing: -6%;*/
     text-transform: uppercase;
 
     font-size: 6rem;
@@ -48,7 +54,7 @@ h1 {
 
 h2 {
     font-family: 'Gazzetta', Arial, Helvetica, sans-serif;
-    font-style: italic;
+    /*font-style: italic;*/
     text-transform: uppercase;
 
     font-size: 4.75rem;
