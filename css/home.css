@@ -127,6 +127,7 @@
 
 .section5 h3 {color: white; text-align: center;}
 
+
 /* Section 6 */
 .sectionRejoindre {
     padding: 96px 128px;
@@ -176,6 +177,8 @@
     flex-direction: column;
     padding-top: 128px;
 }
+
+.section4 .titleContainer img {display: none;}
 
 .sectionRejoindre {
     flex-direction: column;

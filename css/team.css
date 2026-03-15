@@ -1,9 +1,13 @@
+.nav-bar {background-color: var(--beige);}
+.nav-text a {color: var(--dkGreen);}
+.nav-bar .icon {color: var(--dkGreen);}
+
 /* Section 1 */
 .section1 {
     height: 100%;
     background-color: var(--beige);
     color: var(--dkGreen);
-    padding: 128px 96px 96px 128px;
+    padding: 150px 96px 96px 128px;
     display: flex;
     align-items: center;
     gap: 64px;
@@ -63,11 +67,183 @@
     border-radius: 16px;
     box-shadow: 8px 8px 0 0 var(--green);
     background-color: white;
+    padding: 1rem;
     
 }
 
 .teamSection .imgContainer img {
     width: 100%;
+    height: 100%;
 }
 
 .teamSection .you {color: var(--green);}
+
+.teamSection .you .imgContainer {padding: 3rem;}
+
+.section4 h2 {
+    color: var(--green);
+    z-index: 1;
+}
+
+/* Skill section */
+
+.skillSection {
+    height: 100%;
+    background-color: var(--green);
+    color: var(--dkGreen);
+    padding: 96px 128px;
+    display: flex;
+    flex-direction: column;
+}
+
+.skillSection .titleContainer {
+    display: flex;
+}
+
+.skillSection .titleContainer h2 {
+    color: white;
+    z-index: 1;
+}
+
+.skillSection .titleContainer img {
+    position: relative;
+    top: -48px;
+    left: -96px;
+}
+
+.skillSection .tagContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 12px;
+}
+
+.skillSection .buttonOutline {
+    border-color: white;
+    color: white;
+}
+
+/* Section 4 */
+.section4 {
+    background-color: white;
+    padding: 96px 128px;
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+    align-items: center;
+}
+
+.section4 .goalContainer, .section4 .orgContainer {
+    width: 100%;
+}
+
+.section4 h2 {color: var(--green);}
+
+/* Value section */
+.valueSection {
+    background-color: var(--beige);
+    padding: 96px 128px ;
+}
+
+.valueSection h2 {
+    color: var(--green);
+    margin-bottom: 6rem;
+}
+
+.valueSection h2 span {
+    color: var(--green);
+    -webkit-text-fill-color: var(--beige);
+    -webkit-text-stroke: 1px var(--green);
+}
+
+.valueSection .blockContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 16px;
+}
+
+.valueSection .block {
+    background-color: white;
+    padding: 24px;
+    padding-top: 0px;
+    width: 100%;
+}
+
+.valueSection h5 {color: var(--green);}
+
+.valueSection .iconContainer {
+    background-color: var(--dkGreen);
+    padding: 16px;
+    border-radius: 8px;
+    width: fit-content;
+
+    position: relative;
+    top: -32px;
+}
+.valueSection .iconContainer img {
+    height: 32px;
+    width: 32px;
+}
+
+/* Section Rejoindre */
+.sectionRejoindre {
+    padding: 96px 128px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+    gap: 64px;
+}
+
+.sectionRejoindre .BigTxtContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.sectionRejoindre .txtContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.sectionRejoindre h2, .sectionRejoindre h4 {color: var(--green);}
+
+.sectionRejoindre .BigTxtContainer, .sectionRejoindre .imgContainer {width: 100%;}
+
+.sectionRejoindre img {width: 100%;}
+
+/* Mobile version */
+@media screen and (max-width: 900px){
+
+.section1 {
+    padding: 128px 24px 24px 24px;
+    flex-direction: column;
+}
+
+.section1 .imgContainer {display: none;}
+
+.teamSection {
+    padding: 0 24px 48px 24px;
+    gap: 24px
+}
+
+.teamSection .imgContainer {
+    width: 150px;
+    height: 150px;
+}
+
+.skillSection {
+    padding: 48px 24px;
+    gap: 32px;
+}
+
+.skillSection .titleContainer img {display: none;}
+
+.sectionRejoindre {
+    padding: 48px 24px;
+    flex-direction: column;
+}
+
+}

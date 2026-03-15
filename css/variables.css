@@ -23,16 +23,9 @@ body {
       url(../fonts/Gazzetta-BlackSlanted.woff2) format('woff2'), 
       url(../fonts/Gazzetta-BlackSlanted.woff) format('woff'),
       url(../fonts/Gazzetta-BlackSlanted.otf) format('opentype');
-    /*size-adjust: 150%;*/
     font-display: swap;
 }
-/*
-@font-face {
-    font-family: 'Barlow';
-    src: 
-      url(../fonts/BarlowSemiCondensed-SemiBold.ttf) format('truetype');
-}
-*/
+
 @font-face {
   font-family: 'Outfit';
   src: url(../fonts/Outfit-VariableFont_wght.ttf) format('truetype');
@@ -41,8 +34,6 @@ body {
 /* Text styles */
 h1 {
     font-family: 'Gazzetta', Arial, Helvetica, sans-serif;
-    /*font-style: italic;*/
-    /*letter-spacing: -6%;*/
     text-transform: uppercase;
 
     font-size: 6rem;
@@ -54,7 +45,6 @@ h1 {
 
 h2 {
     font-family: 'Gazzetta', Arial, Helvetica, sans-serif;
-    /*font-style: italic;*/
     text-transform: uppercase;
 
     font-size: 4.75rem;
@@ -303,7 +293,6 @@ h3 {font-size: 1.5rem;}
 
   color: white;
   font-family: 'Gazzetta', Arial, Helvetica, sans-serif;
-  font-style: italic;
   text-transform: uppercase;
 }
 
