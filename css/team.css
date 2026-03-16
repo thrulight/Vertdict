@@ -15,11 +15,11 @@
     gap: 64px;
 }
 
-.section1 h2 {
+.section1 h1 {
     color: var(--green);
 }
 
-.section1 h2 span {
+.section1 h1 span {
     color: var(--green);
     -webkit-text-fill-color: var(--beige);
     -webkit-text-stroke: 1px var(--green);
@@ -29,9 +29,9 @@
 
 .section1 p {color: var(--dkGreen);}
 
-.section1 .txtContainer, .section1 .imgContainer {
-    width: 100%;
-}
+.section1 .txtContainer {width: 100%;}
+
+.section1 .imgContainer {width: 50%;}
 
 .section1 .imgContainer {
     padding: 64px;
