@@ -140,13 +140,20 @@ p {
 .buttonDefault {
     font-family: 'Outfit', Arial, Helvetica, sans-serif;
     background-color: var(--blue);
-    border: none;
+    border: 1px solid var(--blue);
     color: white;
     padding: 8px 16px;
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
 }
+.buttonDefault:hover {
+    background-color: white;
+    border: 1px solid var(--dkGreen);
+    color: var(--dkGreen);
+    transition: 0.25s ease 0s;
+}
+
 .buttonLight {
     font-family: 'Outfit', Arial, Helvetica, sans-serif;
     background-color: white;
@@ -157,6 +164,12 @@ p {
     font-weight: 500;
     cursor: pointer;
 }
+.buttonLight:hover {
+    background-color: var(--dkGreen);
+    color: white;
+    transition: 0.25s ease 0s;
+}
+
 .buttonOutline {
     font-family: 'Outfit', Arial, Helvetica, sans-serif;
     background-color: transparent;
@@ -167,9 +180,10 @@ p {
     font-weight: 500;
     cursor: pointer;
 }
-.buttonDefault:hover, .buttonOutline:hover {
-  opacity: .85;
-  transition: 0.3s ease 0s;
+.buttonOutline:hover {
+    border: 1px solid var(--dkGreen);
+    color: var(--dkGreen);
+    transition: 0.25s ease 0s;
 }
 
 .left, .right {
