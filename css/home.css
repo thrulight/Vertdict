@@ -184,4 +184,6 @@
     flex-direction: column;
 }
 
+.sectionRejoindre .BigTxtContainer {gap: 24px;}
+
 }
