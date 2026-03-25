@@ -23,8 +23,18 @@
     background-color: var(--beige);
     padding: 96px 128px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infographySection .content {
+    width: 100%;
+    max-width: 1280px;
+
+    display: flex;
     gap: 64px;
 }
+
 .infographySection h2 {
     color: var(--green);
     z-index: 1;
@@ -52,8 +62,18 @@
     background-color: white;
     padding: 96px 128px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.videoSection .content {
+    width: 100%;
+    max-width: 1280px;
+
+    display: flex;
     gap: 64px;
 }
+
 .videoSection h2 {
     color: var(--green);
     z-index: 1;
@@ -81,8 +101,15 @@
     background-color: var(--beige);
     padding: 96px 128px;
     display: flex;
-    gap: 64px;
+    flex-direction: column;
+    align-items: center;
 }
+
+.eventSection .content {
+    width: 100%;
+    max-width: 1280px;
+}
+
 .eventSection h2 {
     color: var(--green);
     z-index: 1;
@@ -103,6 +130,57 @@
 
 .eventSection .titleContainer {display: flex;}
 
+/* Methodology section */
+.methodologySection {
+    height: 100%;
+    background-color: var(--dkGreen);
+    padding: 96px 128px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.methodologySection .content {
+    width: 100%;
+    max-width: 1280px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    align-items: center;
+}
+
+.methodologySection .content img {max-width: 100%;}
+
+.methodologySection h2 {
+    color: var(--green);
+}
+
+.methodologySection .txtContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 0;
+}
+
+.methodologySection .txtContainer img {
+    position: relative;
+    height: 80px;
+    top: -91px;
+    left: 236px;
+    z-index: -1;
+}
+
+.methodologySection .titleContainer {
+    height: 76px;
+}
+
+.methodologySection .txtContainer p {
+    color: white;
+    text-align: center;
+}
+
 /* Contact section */
 .contactSection {
     background-color: var(--green);
@@ -118,135 +196,10 @@
     text-align: center;
 }
 
-
-/* Carousel */
-.carouselContainer {
-    width: 100%;
-    height: 500px;
-    background-color: white;
-    padding: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.carousel {
-    display: flex;
-    width: 100%;
-    height: 100%;
-}
-
-.carousel-inner {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-}
-
-.carousel-open:checked + .carousel-item {
-    position: static;
-    opacity: 100;
-}
-
-.carousel-item {
-    position: absolute;
-    opacity: 0;
-    box-shadow: 8px 8px 0 0 black;
-    height: 100%;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 48px;
-}
-
-.carousel-item img {
-    display: block;
-    height: 100%;
-    max-width: 100%;
-    object-fit: contain;
-    border: 1px solid #ededed;
-}
-
-.carousel-control {
-    background: var(--green);
-    border-radius: 50%;
-    display: none;
-    height: 40px;
-    width: 40px;
-
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translate(0, -50%);
-    cursor: pointer;
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-    z-index: 10;
-
-    color: white;
-    font-size: 1rem;
-    line-height: 2.5rem;
-    text-align: center;
-
-    cursor: pointer;
-    user-select: none;
-}
-
-/* Position flèches */
-.carousel-control.prev {left: 4%;}
-.carousel-control.next {right: 4%;}
-
-.carousel-control:hover {
-    background: var(--dkGreen);
-    color: white;
-}
-
-/* Affichage flèches */
-#carousel-1:checked ~ .control-1,
-#carousel-2:checked ~ .control-2,
-#carousel-3:checked ~ .control-3 {
-    display: block;
-}
-
-.carousel-indicators {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    z-index: 10;
-}
-
-.carousel-indicators li {
-    display: inline-block;
-    margin: 0 5px;
-}
-
-.carousel-bullet {
-    color: var(--dkGreen);
-    cursor: pointer;
-    display: block;
-    font-size: 35px;
-    line-height: 1rem;
-}
-
-.carousel-bullet:hover {
-    color: #aaaaaa;
-}
-
-#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
-#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
-#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
-    color: var(--green);
-}
-
 /* Mobile version */
 @media screen and (max-width: 900px){
 
-.titleSection, .infographySection, .videoSection, .eventSection, .contactSection {
+.titleSection, .infographySection, .videoSection, .eventSection, .contactSection, .methodologySection {
     padding: 48px 24px;
 }
 
@@ -255,13 +208,17 @@
     padding-top: 128px;
 }
 
-.infographySection, .videoSection {
+.infographySection .content, .videoSection .content {
     flex-direction: column;
     gap: 24px;
 }
 
 .videoSection .txtContainer {
     margin-top: 0;
+}
+
+.methodologySection {
+    gap: 24px;
 }
 
 }

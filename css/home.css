@@ -6,6 +6,16 @@
     background-color: var(--dkGreen);
     color: white;
     padding: 96px 128px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section1 .content {
+    width: 100%;
+    max-width: 1280px;
+
     display: flex;
     align-items: center;
     gap: 64px;
@@ -20,7 +30,16 @@
 /* Section 2 */
 .section2 {
     background-color: var(--beige);
-    padding: 96px 128px ;
+    padding: 96px 128px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section2 .content {
+    width: 100%;
+    max-width: 1280px;
 }
 
 .section2 h2 {
@@ -74,6 +93,15 @@
 .section4 {
     background-color: var(--beige);
     padding: 96px 128px ;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section4 .content {
+    width: 100%;
+    max-width: 1280px;
 }
 
 .section4 h2 {
@@ -131,6 +159,16 @@
 /* Section 6 */
 .sectionRejoindre {
     padding: 96px 128px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectionRejoindre .content {
+    width: 100%;
+    max-width: 1280px;
+
     display: flex;
     flex-direction: row;
     gap: 16px;
@@ -173,14 +211,14 @@
     padding: 48px 24px;
 }
 
-.section1 {
+.section1 .content {
     flex-direction: column;
     padding-top: 128px;
 }
 
 .section4 .titleContainer img {display: none;}
 
-.sectionRejoindre {
+.sectionRejoindre .content {
     flex-direction: column;
 }
 
