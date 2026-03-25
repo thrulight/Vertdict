@@ -184,7 +184,16 @@
 /* Value section */
 .valueSection {
     background-color: var(--beige);
-    padding: 96px 128px ;
+    padding: 96px 128px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.valueSection .content {
+    width: 100%;
+    max-width: 1280px;
 }
 
 .valueSection h2 {
@@ -231,6 +240,16 @@
 /* Section Rejoindre */
 .sectionRejoindre {
     padding: 96px 128px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectionRejoindre .content {
+    width: 100%;
+    max-width: 1280px;
+
     display: flex;
     flex-direction: row;
     gap: 16px;
@@ -259,7 +278,7 @@
 /* Mobile version */
 @media screen and (max-width: 900px){
 
-.skillSection, .valueSection, .section4 {
+.skillSection, .valueSection, .section4, .sectionRejoindre {
     padding: 48px 24px;
 }
 
@@ -280,20 +299,22 @@
     height: 150px;
 }
 
-.skillSection {gap: 32px;}
+.skillSection .content {gap: 24px;}
 
 .skillSection .titleContainer img {display: none;}
 
-.section4 {flex-direction: column; gap: 24px;}
+.section4 .content {flex-direction: column; gap: 24px;}
 
 .valueSection .blockContainer {
     flex-direction: column;
     gap: 48px;
 }
 
-.sectionRejoindre {
-    padding: 48px 24px;
+.valueSection h2 {margin-bottom: 4rem;}
+
+.sectionRejoindre .content {
     flex-direction: column;
+    gap: 24px;
 }
 
 .sectionRejoindre .BigTxtContainer {gap: 24px;}
