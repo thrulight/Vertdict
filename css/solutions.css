@@ -52,6 +52,8 @@
     height: 80px;
     top: -24px;
     left: -44px;
+
+    animation: wiggle 1.5s infinite;
 }
 
 .infographySection .titleContainer {display: flex;}
