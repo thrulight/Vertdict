@@ -26,7 +26,8 @@
 
 <body>
   <!-- Navigation bar -->
-  <div class="X" id="X"><span  onclick="closeNav()">&times;</span></div>
+   <header>
+      <div class="X" id="X"><span  onclick="closeNav()">&times;</span></div>
   <div id="overlay" class="overlay"></div>
 
   <div class="nav-bar" id="navbar">
@@ -50,9 +51,12 @@
     <li><a  href="index.html">Qu’est-ce que <br>le legal design ?</a></li>
     <li><a href="team.html">Notre équipe</a></li>
   </ul>
+   </header>
+
 
   <!-- Page content -->
-  <div class="section1">
+  <main>
+      <div class="section1">
     <div class="content">
       <div class="left">
         <h1>
@@ -176,9 +180,11 @@
       </div>
     </div>
   </div>
+  </main>
+
 
   <!-- Footer -->
-  <div class="footer">
+  <div class="footer" role="contentinfo">
     <img src="images/logo-vert.svg" onclick="window.location.href='index.html'" alt="logo">
 
     <div class="linkContainer">

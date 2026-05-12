@@ -30,7 +30,8 @@
 
 <body>
   <!-- Navigation bar -->
-  <div class="X" id="X"><span  onclick="closeNav()">&times;</span></div>
+   <header>
+    <div class="X" id="X"><span  onclick="closeNav()">&times;</span></div>
   <div id="overlay" class="overlay"></div>
 
   <div class="nav-bar" id="navbar">
@@ -54,9 +55,12 @@
     <li><a  href="index.html">Qu’est-ce que <br>le legal design ?</a></li>
     <li><a href="team.html" >Notre équipe</a></li>
     </ul>
+   </header>
+  
 
     <!-- Page content -->
-    <div class="titleSection">
+    <main>
+          <div class="titleSection">
         <h1>Nos solutions</h1>
         <p>Nous vous aidons à clarifier les enjeux du droit de l’environnement et climatiques grâce au design</p>
     </div>
@@ -167,10 +171,11 @@
         <h3>Envie de discuter de votre projet&nbsp;?</h3>
         <button class="buttonLight">Nous contacter</button>
     </div>
+    </main>
 
 
     <!-- Footer -->
-    <div class="footer">
+    <div class="footer" role="contentinfo">
         <img src="images/logo-vert.svg" onclick="window.location.href='index.html'" alt="logo">
 
         <div class="linkContainer">
