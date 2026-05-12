@@ -1,0 +1,44 @@
+.nav-bar {background-color: var(--dkGreen);}
+
+/* Intro section */
+.introSection {
+    background-color: var(--dkGreen);
+}
+
+/* Text section */
+.textSection {
+    background-color: var(--beige);
+    color: var(--dkGreen);
+}
+
+/* Methdology section */
+.methodologySection {
+    background-color: var(--green);
+    color: white;
+}
+
+.methodologySection .blockContainer {
+    display: flex;
+    width: 100%;
+    gap: 16px;
+}
+
+.methodologySection .blockContainer .block {
+    width: 100%;
+    height: 100%;
+    padding-top: 24px;
+    border-top: 8px solid white;
+}
+
+.methodologySection .blockContainer p {color: var(--dkGreen);}
+
+/* Section 4 */
+.section4 {
+    background-color: var(--blue);
+    color: white;
+}
+
+/* Benefits section */
+.benefitsSection {
+    
+}
