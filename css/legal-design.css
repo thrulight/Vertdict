@@ -2,19 +2,93 @@
 
 /* Intro section */
 .introSection {
+    height: 100%;
     background-color: var(--dkGreen);
+    color: white;
+    padding: 200px 128px 128px 128px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.introSection .content {
+    width: 100%;
+    max-width: 1280px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+}
+
+.introSection h1 {color: var(--green);}
+
+
+.introSection img {
+    width: 100%;
+    max-width: 650px;
 }
 
 /* Text section */
 .textSection {
     background-color: var(--beige);
     color: var(--dkGreen);
+    height: 100%;
+    padding: 128px;
+
+    display: flex;
+    justify-content: center;
 }
+
+.textSection h5 {max-width: 700px;}
 
 /* Methdology section */
 .methodologySection {
     background-color: var(--green);
     color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.methodologySection .content {
+    width: 100%;
+    max-width: 1280px;
+
+    display: flex;
+    flex-direction: column;
+    padding: 128px;
+
+    gap: 24px;
+}
+
+.methodologySection .txtSection {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+}
+
+.methodologySection .titleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 4.75rem;
+}
+
+.methodologySection h2 {
+    text-align: center;
+    z-index: 1;
+}
+
+.methodologySection .titleContainer img {
+    position: relative;
+    top: -110px;
+    left: 183px;
+    width: 120px;
+    animation: rotation 15s infinite linear;
 }
 
 .methodologySection .blockContainer {
@@ -40,5 +114,15 @@
 
 /* Benefits section */
 .benefitsSection {
-    
+    background-color: var(--beige);
+}
+
+.benefitsSection h2 {color: var(--green);}
+
+/* Section 5 */
+.section5 h2 { color: var(--green); }
+
+/* partner section */
+.partnerSection {
+    background-color: var(--green);
 }
