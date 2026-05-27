@@ -1,5 +1,7 @@
 .nav-bar {background-color: var(--dkGreen);}
 
+#active {color: var(--dkGreen);}
+
 /* Intro section */
 .introSection {
     height: 100%;
@@ -47,6 +49,7 @@
 .methodologySection {
     background-color: var(--green);
     color: white;
+    padding: 128px;
 
     display: flex;
     flex-direction: column;
@@ -59,7 +62,6 @@
 
     display: flex;
     flex-direction: column;
-    padding: 128px;
 
     gap: 24px;
 }
@@ -109,20 +111,125 @@
 /* Section 4 */
 .section4 {
     background-color: var(--blue);
-    color: white;
+    padding: 64px 128px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
 }
+
+.section4 h3 {color: white;}
 
 /* Benefits section */
 .benefitsSection {
+    height: 100%;
     background-color: var(--beige);
+    color: var(--dkGreen);
+    padding: 128px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.benefitsSection .content {
+    width: 100%;
+    max-width: 1280px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 64px;
 }
 
 .benefitsSection h2 {color: var(--green);}
 
+.benefitsSection .benefitsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.benefitsSection .benefit {
+    background-color: white;
+    border-left: 6px solid var(--green);
+    padding: 24px;
+}
+
 /* Section 5 */
-.section5 h2 { color: var(--green); }
+.section5 {
+    height: 100%;
+    background-color: white;
+    color: var(--dkGreen);
+    padding: 128px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section5 .content {
+    width: 100%;
+    max-width: 1280px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    gap: 32px;
+}
+
+.section5 h2, .section5 h4 { color: var(--green); }
+
+.section5 h4 {
+    margin-top: 32px;
+}
 
 /* partner section */
 .partnerSection {
     background-color: var(--green);
+    padding: 64px 128px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+.partnerSection h3 {
+    color: white;
+    text-align: center;
+}
+
+
+/* Mobile version */
+@media screen and (max-width: 900px){
+
+.textSection, .methodologySection, .section4, .benefitsSection, .section5, .partnerSection {
+    padding: 48px 24px;
+}
+
+.introSection {padding: 128px 24px 48px 24px;}
+
+.methodologySection .blockContainer, .section5 .content {
+    flex-direction: column;
+}
+
+.methodologySection .titleContainer {
+    height: 100%;
+}
+
+.methodologySection .titleContainer img {
+    display: none
+}
+
+.benefitsSection h5 {
+    font-size: 1rem;
+}
+
+.benefitsSection .benefit {padding: 16px;}
+
+.benefitsSection .content {
+    gap: 24px;
+}
+
+
 }

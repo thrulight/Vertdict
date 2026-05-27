@@ -223,4 +223,8 @@
     gap: 24px;
 }
 
+.methodologySection .titleContainer img {
+    display: none;
+}
+
 }
