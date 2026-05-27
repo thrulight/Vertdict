@@ -1,0 +1,29 @@
+.nav-bar {background-color: var(--beige);}
+.nav-text a {color: var(--dkGreen);}
+.nav-bar .icon {color: var(--dkGreen);}
+
+/* Section1 */
+.section1 {
+    height: 100%;
+    background-color: var(--beige);
+    color: var(--dkGreen);
+    padding: 128px 128px 128px 128px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section1 h1 {
+    color: var(--green);
+}
+
+.section1 p {
+    margin-bottom: 64px;
+}
+
+.elfsight-app-3593ef83-1bc6-4e98-ba50-1b02fac0024d {
+    width: 100%;
+}
+
+.section1 {padding: 128px 24px 48px 24px;}
