@@ -1,0 +1,75 @@
+details {
+   padding: .25rem 0;
+   color: var(--dkGreen);
+   border-bottom: 1px solid var(--green);
+  
+	&[open] summary::after {
+		rotate: -180deg;
+	}
+}
+
+details[open] summary {}
+
+details summary {
+  cursor: pointer;
+  transition: margin .3s ease-out;
+  color: var(--dkGreen);
+}
+
+summary {
+   /* Override default "display: list-item" and position the summary text as well as the custom arrow icon */
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 1rem;
+
+   /* General styling */
+   cursor: pointer;
+   font-weight: 500;
+   
+   /* Fallback code to hide standard marker, especially on Safari */
+   &::marker,
+   &::-webkit-details-marker {
+      display: none;
+   }
+    
+   &::after {
+   /* CSS for chevron shape from https://css-shape.com/chevron/ */
+   --shape-chevron-width: 1rem;
+   --s: calc(var(--shape-chevron-width) / 4);
+
+   /* Styling */
+   content: "";
+   aspect-ratio: 7/5;
+   background: currentColor;
+   clip-path: polygon(0 0, 0 var(--s), 50% 100%, 100% var(--s), 100% 0, 50% calc(100% - var(--s)));
+   flex-shrink: 0;
+   width: var(--shape-chevron-width);
+   color: var(--green);
+   
+   /* Animation */
+   rotate: 0deg;
+   transition: rotate 0.35s ease;
+   }
+
+}
+
+details {
+  interpolate-size: allow-keywords;
+  
+  &::details-content {
+    transition:
+      block-size .3s,
+      content-visibility 1s allow-discrete;
+    overflow: hidden;
+    block-size: 0;     /* Or also:  height:0; */
+  }
+  
+  &[open]::details-content {
+    block-size: auto;  /* Or also:  height:auto; */
+  }
+}
+
+details p {
+   margin: 0;
+}

@@ -92,6 +92,7 @@
 /* Section 4 */
 .section4 {
     background-color: var(--beige);
+    color: var(--dkGreen);
     padding: 96px 128px ;
 
     display: flex;
@@ -107,6 +108,18 @@
 .section4 h2 {
     color: var(--green);
     z-index: 1;
+}
+
+.section4 .txtContainer a {
+    color: var(--dkGreen);
+}
+
+.section4 li {
+    margin-bottom: 1rem;
+}
+
+.section4 summary h4 {
+    margin-bottom: 0;
 }
 
 .section4 .titleContainer {
